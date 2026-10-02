@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-ink text-bg;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.ink');
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Lowercase label style used above every section, e.g. "work." / "about." */
+  .eyebrow {
+    @apply font-mono text-sm lowercase text-muted;
+  }
+
+  .progress-track {
+    @apply relative h-px w-16 bg-border overflow-hidden;
+  }
+  .progress-fill {
+    @apply absolute inset-y-0 left-0 bg-ink origin-left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
