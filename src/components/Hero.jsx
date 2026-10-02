@@ -88,25 +88,13 @@ export default function Hero() {
             View My Work
           </a>
           <a
-            href={person.resumeUrl}
+            href= "https://drive.google.com/file/d/1f9AnLucoQIwk1yFOF0QSDP1FlOiCVYWX/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 bg-plum text-bg rounded-full px-7 py-3.5 text-base font-medium hover:opacity-85 transition-opacity"
           >
             Download Resume
           </a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="flex flex-col items-center gap-2 text-faint mt-20 w-fit"
-        >
-          <span className="font-mono text-xs tracking-widest uppercase">Scroll</span>
-          <motion.span animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 1.6, ease: 'easeInOut' }}>
-            <ArrowDown size={15} />
-          </motion.span>
         </motion.div>
       </div>
     </section>
