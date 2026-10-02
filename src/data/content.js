@@ -8,7 +8,7 @@ export const person = {
   phone: '+91 95506 68883',
   linkedinUrl: 'https://linkedin.com/in/merugula-chaitanya-5044b7272',
   githubUrl: 'https://github.com/chaitu347',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: 'https://drive.google.com/file/d/1f9AnLucoQIwk1yFOF0QSDP1FlOiCVYWX/view?usp=drive_link',
   photoUrl: 'https://res.cloudinary.com/dmof2vhqp/image/upload/v1790773234/photo-modified_circle_ur6uw9.png',
   status: 'Available For Work',
   intro:
